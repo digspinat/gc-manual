@@ -1,4 +1,37 @@
+/*Container CSS*/
+.my_content{
+  margin-bottom: 130px;
+}
+.gcm-header{
+  color: black;
+  padding: 4px;
+}
+.padding-top{
+  padding-top: 1cm;
+}
+.image-box-product{
+  padding: 10px;
+  margin: 4px;
+}
+.padding-top-change{
+  padding-top: 0cm;
+}
 
+  @media only screen and (max-width: 500px){
+    .padding-top-change{
+      padding-top: 1cm;
+    }
+  }
+
+  @media only screen and (max-width: 800px){
+    .padding-top-change{
+      padding-top: 1cm;
+    }
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1025px){
+
+  }
 /*Footer CSS*/
 .footer_title{
   color: white;
@@ -49,7 +82,7 @@ footer{
       }
 
       .custom-wrapper.open {
-          height: 19em;
+          height: 20em;
       }
 
       .custom-menu-3 {
