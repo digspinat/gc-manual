@@ -1,0 +1,59 @@
+</div>
+</div>
+<footer>
+  <div class="container">
+    <div class="row footer_title">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <h6>Hello From Footer</h6>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+  </div>
+</footer>
+<script src="{{ .Site.BaseURL }}js/ui.js"></script>
+
+{{ partial "google_analytics.html" . }}
+<script>
+      (function (window, document) {
+      var menu1 = document.getElementById('menu1'),
+          WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
+
+      function toggleHorizontal() {
+          [].forEach.call(
+              document.getElementById('menu1').querySelectorAll('.custom-can-transform'),
+              function(el){
+                  el.classList.toggle('pure-menu-horizontal');
+              }
+          );
+      };
+
+      function togglemenu() {
+          // set timeout so that the panel has a chance to roll up
+          // before the menu1 switches states
+          if (menu1.classList.contains('open')) {
+              setTimeout(toggleHorizontal, 500);
+          }else{
+              toggleHorizontal();
+          }
+          menu1.classList.toggle('open');
+          document.getElementById('toggle').classList.toggle('x');
+          var d = document.getElementById("div1");
+      };
+
+      function closemenu() {
+          if (menu1.classList.contains('open')){
+              togglemenu();
+          }
+      }
+
+      document.getElementById('toggle').addEventListener('click', function (e) {
+          togglemenu();
+          e.preventDefault();
+      });
+
+      window.addEventListener(WINDOW_CHANGE_EVENT, closemenu);
+      })(this, this.document);
+</script>
+</body>
+</html>

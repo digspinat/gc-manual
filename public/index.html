@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.25.1" />
+
+  <title>Blackburn Theme Demo</title>
+
+  
+  
+  <link rel="stylesheet" href="https://www.example.com/css/purecss.css">
+  <script  type="text/javascript" src="https://www.example.com/js/jquery.js"></script>
+  <link rel="stylesheet" href="https://www.example.com/css/bootstrap.css">
+  <link rel="stylesheet" href="https://www.example.com/css/main.css">
+  <link rel="stylesheet" href="https://www.example.com/css/font-awesome/css/font-awesome.min.css">
+
+  <script  type="text/javascript" src="https://www.example.com/js/bootstrapjs.js"></script>
+  <script src="https://www.example.com/js/algolia.js"></script>
+  <link rel="stylesheet" href="https://www.example.com/css/purecssgrid.css">
+
+  
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://www.example.com/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://www.example.com/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://www.example.com/css/blackburn.css">
+
+  
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  <link rel="shortcut icon" href="https://www.example.com/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+  <div class="custom-wrapper " id="menu1">
+  <div class=" pure-g">
+    <div class="pure-u-1 pure-u-md-1-3">
+        <div class="pure-menu">
+            <a href="https://www.example.com/" class="pure-menu-heading custom-brand menu-color-white"><h4>German Car Manual</h4></a>
+            <a href="#" class="custom-toggle " id="toggle"><s class="bar"></s><s class="bar"></s></a>
+        </div>
+    </div>
+    <div class=" main-menu pure-u-1 pure-u-md-1-3">
+        <div class="pure-menu pure-menu-horizontal custom-can-transform">
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item menu-main menu-item-main"><a href="#" class="pure-menu-link menu-color-white">Home</a></li>
+                <li class="pure-menu-item menu-item-main"><a href="#" class="pure-menu-link menu-color-white">About</a></li>
+                <li class="pure-menu-item menu-item-main"><a href="#" class="pure-menu-link menu-color-white">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-menu main-menu1  pure-u-1 pure-u-md-1-3">
+        <div class="pure-menu pure-menu-horizontal custom-menu-3 custom-can-transform">
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item menu-item-main"><a href="#" class="pure-menu-link menu-color-white">Yahoo</a></li>
+                <li class="pure-menu-item menu-item-main"><a href="#" class="pure-menu-link menu-color-white">W3C</a></li>
+            </ul>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div id="layout">
+  <div id="main">
+
+<div class="content">
+
+
+</div>
+</div>
+</div>
+<footer>
+  <div class="container">
+    <div class="row footer_title">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <h6>Hello From Footer</h6>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+  </div>
+</footer>
+<script src="https://www.example.com/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'Your Google Analytics tracking ID', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+<script>
+      (function (window, document) {
+      var menu1 = document.getElementById('menu1'),
+          WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
+
+      function toggleHorizontal() {
+          [].forEach.call(
+              document.getElementById('menu1').querySelectorAll('.custom-can-transform'),
+              function(el){
+                  el.classList.toggle('pure-menu-horizontal');
+              }
+          );
+      };
+
+      function togglemenu() {
+          
+          
+          if (menu1.classList.contains('open')) {
+              setTimeout(toggleHorizontal, 500);
+          }else{
+              toggleHorizontal();
+          }
+          menu1.classList.toggle('open');
+          document.getElementById('toggle').classList.toggle('x');
+          var d = document.getElementById("div1");
+      };
+
+      function closemenu() {
+          if (menu1.classList.contains('open')){
+              togglemenu();
+          }
+      }
+
+      document.getElementById('toggle').addEventListener('click', function (e) {
+          togglemenu();
+          e.preventDefault();
+      });
+
+      window.addEventListener(WINDOW_CHANGE_EVENT, closemenu);
+      })(this, this.document);
+</script>
+</body>
+</html>
+
