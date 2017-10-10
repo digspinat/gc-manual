@@ -8,7 +8,7 @@
     </div>
     <div class=" main-menu pure-u-1 pure-u-md-1-3">
         <div class="pure-menu pure-menu-horizontal custom-can-transform">
-            <ul class="pure-menu-list">
+            <ul class="pure-menu-list" id="brand_dis">
               {{ range .Site.Menus.main }}
                 {{ if .HasChildren }}
                   <li class="pure-menu-item pure-menu-has-children">
@@ -21,7 +21,7 @@
                       {{ end }}
                     </ul>
                 {{else}}
-                  <li class="pure-menu-item menu-item-main"><a href="{{ .URL }}" class="pure-menu-link menu-color-white">{{ .Name }}</a></li>
+                  <!-- <li class="pure-menu-item menu-item-main"><a href="{{ .URL }}" class="pure-menu-link menu-color-white">{{ .Name }}</a></li> -->
                 {{end}}
                 {{end}}
                 <!-- <li class="pure-menu-item menu-main menu-item-main"><a href="#" class="pure-menu-link menu-color-white">Home</a></li>
@@ -32,10 +32,37 @@
     <div class="main-menu main-menu1  pure-u-1 pure-u-md-1-3">
         <div class="pure-menu pure-menu-horizontal custom-menu-3 custom-can-transform">
             <ul class="pure-menu-list">
-                <li class="pure-menu-item menu-item-main"><a href="#" class="pure-menu-link menu-color-white">Yahoo</a></li>
-                <li class="pure-menu-item menu-item-main"><a href="#" class="pure-menu-link menu-color-white">W3C</a></li>
+                <!-- <li class="pure-menu-item menu-item-main"><a href="#" class="pure-menu-link menu-color-white">Yahoo</a></li>
+                <li class="pure-menu-item menu-item-main"><a href="#" class="pure-menu-link menu-color-white">W3C</a></li> -->
             </ul>
         </div>
     </div>
   </div>
 </div>
+<script type="text/javascript">
+  $(document).ready(function(){
+    var client = algoliasearch("YZO8M6AZ6J", "847f24047332edf2bb6a0c1f0181b83e");
+    var index = client.initIndex('new_gcm_car');
+
+      index.search({
+        query: '*',
+        distinct: true,
+        facetingAfterDistinct: true
+      }).then(res => {
+        // console.log(res);
+        var Brand = ""
+        $.each(res.hits, function( i, val ){
+          if(val['Make'] == "BMW"){
+            Brand += "<li class='pure-menu-item menu-item-main'><a href='/make/bmw/' class='pure-menu-link'>"+val['Make']+"</a></li>";
+          }
+          if(val['Make'] == "volkswagan"){
+            Brand += "<li class='pure-menu-item menu-item-main'><a href='/make/volkswagan/' class='pure-menu-link'>"+val['Make']+"</a></li>"
+          }
+          if(val['Make'] == "Audi"){
+            Brand += "<li class='pure-menu-item menu-item-main'><a href='/make/audi/' class='pure-menu-link'>"+val['Make']+"</a></li>"
+          }
+        });
+        $("#brand_dis").html(Brand);
+      });
+  });
+</script>
