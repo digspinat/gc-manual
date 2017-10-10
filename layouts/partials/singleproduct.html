@@ -6,15 +6,15 @@
   </div>
   <div class="row padding-top image-box-product">
     <div class="col-md-5">
-      <img src="{{ .Params.Productpage_image }}" class="img-thumbnail" alt="Cinque Terre">
+      <img src="{{ .Params.productpage_image }}" class="img-thumbnail" alt="Cinque Terre">
     </div>
     <div class="col-md-7 padding-top-change">
       <div class="row">
         <div class="col-md-12">
           <ul class="list-group">
-            <li class="list-group-item"><span class="gcm-header">Price:</span> {{ .Params.Price }}</li>
-            <li class="list-group-item"><span class="gcm-header">Currency:</span> {{ .Params.Currency }}</li>
-            <li class="list-group-item">{{ .Params.Sendowl | safeHTML }}</li>
+            <li class="list-group-item"><span class="gcm-header">Price:</span> {{ .Params.price }}</li>
+            <li class="list-group-item"><span class="gcm-header">Currency:</span> {{ .Params.currency }}</li>
+            <li class="list-group-item">{{ .Params.sendowl | safeHTML }}</li>
           </ul>
         </div>
       </div>
@@ -30,17 +30,17 @@
   <div class="row padding-top">
     <div class="col-md-12">
       <ul class="list-group">
-        <li class="list-group-item"><span class="gcm-header">Manual File type:</span> <strong>{{ .Params.Manual_file_type }}</strong></li>
-        <li class="list-group-item"><span class="gcm-header">Manual file:</span> <strong>{{ .Params.Manual_type }}</strong></li>
-        <li class="list-group-item"><span class="gcm-header">Manual pages:</span> <strong>{{ .Params.Manual_pages }}</strong></li>
-        <li class="list-group-item"><span class="gcm-header">Manual size:</span> <strong>{{ .Params.Manual_size }}</strong></li>
+        <li class="list-group-item"><span class="gcm-header">Manual File type:</span> <strong>{{ .Params.manual_file_type }}</strong></li>
+        <li class="list-group-item"><span class="gcm-header">Manual file:</span> <strong>{{ .Params.manual_type }}</strong></li>
+        <li class="list-group-item"><span class="gcm-header">Manual pages:</span> <strong>{{ .Params.manual_pages }}</strong></li>
+        <li class="list-group-item"><span class="gcm-header">Manual size:</span> <strong>{{ .Params.manual_size }}</strong></li>
       </ul>
     </div>
   </div>
   <div class="row padding-top">
     <div class="col-md-12">
       <h3 class="gcm-header">Partial Advantages</h3>
-      <p>{{ .Params.Part_gr_advantages | safeHTML }}</p>
+      <p>{{ .Params.part_gr_advantages | safeHTML }}</p>
     </div>
   </div>
   <div class="row padding-top">
@@ -53,7 +53,7 @@
     <div class="panel-heading">
         <h3 class="panel-title gcm-header">Manual Covers</h3>
     </div>
-    <div class="panel-body">{{ .Params.Manual_covers | markdownify }}</div>
+    <div class="panel-body">{{ .Params.manual_covers | markdownify }}</div>
   </div>
   <div class="panel padding-top">
     <div class="panel-heading">
@@ -63,55 +63,55 @@
       <table class="table">
         <tr>
           <td class="gcm-header">Make</td>
-          <td>{{ .Params.Make }}</td>
+          <td>{{ .Params.make }}</td>
         </tr>
         <tr>
           <td class="gcm-header">Serie</td>
-          <td>{{ .Params.Serie }}</td>
+          <td>{{ .Params.serie }}</td>
         </tr>
         <tr>
           <td class="gcm-header">Sub-serie</td>
-          <td>{{ .Params.Sub_serie }}</td>
+          <td>{{ .Params.sub_serie }}</td>
         </tr>
         <tr>
           <td class="gcm-header">Platform</td>
-          <td>{{ .Params.Platform }}</td>
+          <td>{{ .Params.platform }}</td>
         </tr>
         <tr>
           <td class="gcm-header">Engine</td>
-          <td>{{ .Params.Engine }}</td>
+          <td>{{ .Params.engine }}</td>
         </tr>
         <tr>
           <td class="gcm-header">Year</td>
-          <td>{{ .Params.Year }}</td>
+          <td>{{ .Params.year }}</td>
         </tr>
         <tr>
           <td class="gcm-header">Body Type</td>
-          <td>{{ .Params.Body_type }}</td>
+          <td>{{ .Params.body_type }}</td>
         </tr>
         <tr>
           <td class="gcm-header">Fuel Type</td>
-          <td>{{ .Params.Fuel_type }}</td>
+          <td>{{ .Params.fuel_type }}</td>
         </tr>
         <tr>
           <td class="gcm-header">Cylinder</td>
-          <td>{{ .Params.Cylinders }}</td>
+          <td>{{ .Params.cylinders }}</td>
         </tr>
         <tr>
           <td class="gcm-header">Displacement</td>
-          <td>{{ .Params.Displacement }}</td>
+          <td>{{ .Params.displacement }}</td>
         </tr>
         <tr>
           <td class="gcm-header">Power_kw</td>
-          <td>{{ .Params.Power_kw }}</td>
+          <td>{{ .Params.power_kw }}</td>
         </tr>
         <tr>
           <td class="gcm-header" >Horse Power</td>
-          <td>{{ .Params.Horse_power }}</td>
+          <td>{{ .Params.horse_power }}</td>
         </tr>
         <tr>
           <td class="gcm-header">Torque_nm</td>
-          <td>{{ .Params.Torque_Nm }}</td>
+          <td>{{ .Params.torque_Nm }}</td>
         </tr>
       </table>
     </div>
@@ -120,13 +120,13 @@
   </div>
   <div class="row padding-top">
     <div class="col-md-12 text-center">
-      {{ .Params.Sendowl | safeHTML }}
+      {{ .Params.sendowl | safeHTML }}
     </div>
   </div>
   <div class="row padding-top">
     <div class="col-md-12">
       <ul class="list-group">
-        <li class="list-group-item"><span class="gcm-header">Partial Downloads:</span> <strong>{{ .Params.Part_gr_downloads }}</strong></li>
+        <li class="list-group-item"><span class="gcm-header">Partial Downloads:</span> <strong>{{ .Params.part_gr_downloads }}</strong></li>
       </ul>
     </div>
   </div>
