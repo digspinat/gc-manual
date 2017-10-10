@@ -1,0 +1,133 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-left">
+      <h2 class="gcm-header">{{ .Title }}</h2>
+    </div>
+  </div>
+  <div class="row padding-top image-box-product">
+    <div class="col-md-5">
+      <img src="{{ .Params.Productpage_image }}" class="img-thumbnail" alt="Cinque Terre">
+    </div>
+    <div class="col-md-7 padding-top-change">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="list-group">
+            <li class="list-group-item"><span class="gcm-header">Price:</span> {{ .Params.Price }}</li>
+            <li class="list-group-item"><span class="gcm-header">Currency:</span> {{ .Params.Currency }}</li>
+            <li class="list-group-item">{{ .Params.Sendowl | safeHTML }}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row padding-top">
+        <div class="col-md-12">
+          <ul class="list-group">
+            <li class="list-group-item"><span class="gcm-header">From Partial Cart Button</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row padding-top">
+    <div class="col-md-12">
+      <ul class="list-group">
+        <li class="list-group-item"><span class="gcm-header">Manual File type:</span> <strong>{{ .Params.Manual_file_type }}</strong></li>
+        <li class="list-group-item"><span class="gcm-header">Manual file:</span> <strong>{{ .Params.Manual_type }}</strong></li>
+        <li class="list-group-item"><span class="gcm-header">Manual pages:</span> <strong>{{ .Params.Manual_pages }}</strong></li>
+        <li class="list-group-item"><span class="gcm-header">Manual size:</span> <strong>{{ .Params.Manual_size }}</strong></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row padding-top">
+    <div class="col-md-12">
+      <h3 class="gcm-header">Partial Advantages</h3>
+      <p>{{ .Params.Part_gr_advantages | safeHTML }}</p>
+    </div>
+  </div>
+  <div class="row padding-top">
+    <div class="col-md-12">
+      <h3 class="gcm-header">Description</h3>
+      <p>{{ .Content | markdownify }}</p>
+    </div>
+  </div>
+  <div class="panel padding-top">
+    <div class="panel-heading">
+        <h3 class="panel-title gcm-header">Manual Covers</h3>
+    </div>
+    <div class="panel-body">{{ .Params.Manual_covers | markdownify }}</div>
+  </div>
+  <div class="panel padding-top">
+    <div class="panel-heading">
+        <h3 class="panel-title gcm-header">Car Specification</h3>
+    </div>
+    <div class="col-md-4 padding-top">
+      <table class="table">
+        <tr>
+          <td class="gcm-header">Make</td>
+          <td>{{ .Params.Make }}</td>
+        </tr>
+        <tr>
+          <td class="gcm-header">Serie</td>
+          <td>{{ .Params.Serie }}</td>
+        </tr>
+        <tr>
+          <td class="gcm-header">Sub-serie</td>
+          <td>{{ .Params.Sub_serie }}</td>
+        </tr>
+        <tr>
+          <td class="gcm-header">Platform</td>
+          <td>{{ .Params.Platform }}</td>
+        </tr>
+        <tr>
+          <td class="gcm-header">Engine</td>
+          <td>{{ .Params.Engine }}</td>
+        </tr>
+        <tr>
+          <td class="gcm-header">Year</td>
+          <td>{{ .Params.Year }}</td>
+        </tr>
+        <tr>
+          <td class="gcm-header">Body Type</td>
+          <td>{{ .Params.Body_type }}</td>
+        </tr>
+        <tr>
+          <td class="gcm-header">Fuel Type</td>
+          <td>{{ .Params.Fuel_type }}</td>
+        </tr>
+        <tr>
+          <td class="gcm-header">Cylinder</td>
+          <td>{{ .Params.Cylinders }}</td>
+        </tr>
+        <tr>
+          <td class="gcm-header">Displacement</td>
+          <td>{{ .Params.Displacement }}</td>
+        </tr>
+        <tr>
+          <td class="gcm-header">Power_kw</td>
+          <td>{{ .Params.Power_kw }}</td>
+        </tr>
+        <tr>
+          <td class="gcm-header">Horse Power</td>
+          <td>{{ .Params.Horse_power }}</td>
+        </tr>
+        <tr>
+          <td class="gcm-header">Torque_nm</td>
+          <td>{{ .Params.Torque_Nm }}</td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-4"></div>
+    <div class="col-md-4"></div>
+  </div>
+  <div class="row padding-top">
+    <div class="col-md-12 text-center">
+      {{ .Params.Sendowl | safeHTML }}
+    </div>
+  </div>
+  <div class="row padding-top">
+    <div class="col-md-12">
+      <ul class="list-group">
+        <li class="list-group-item"><span class="gcm-header">Partial Downloads:</span> <strong>{{ .Params.Part_gr_downloads }}</strong></li>
+      </ul>
+    </div>
+  </div>
+</div>
