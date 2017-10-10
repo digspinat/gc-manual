@@ -9,6 +9,10 @@ paginate = 10
 [indexes]
   tag = "tags"
   topic = "topics"
+  product = "Make"
+
+[taxonomy]
+  product = "Make"
 
 [params]
   # Shown in the home page

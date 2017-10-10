@@ -1,0 +1,24 @@
+{{ partial "header.html" . }}
+<div class="header">
+  <h1>{{ .Title }}</h1>
+</div>
+<div class="my_content">
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+      <div class="col-md-8">
+        <div class="container">
+          <div class="row" id="productdata">
+            {{ range .Data.Pages }}
+              {{ .Render "summary"}}
+            {{ end }}
+          </div>
+        </div>
+      </div>
+  </div>
+  <form class="">
+    <input type="hidden" id="display_brand" value="{{ .Title }}">
+  </form>
+</div>
+
+{{ partial "footer.html" . }}
