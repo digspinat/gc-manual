@@ -30,20 +30,20 @@ paginate = 10
     weight = 1
     languageName = "USD"
     languageCode = "en-us"
-    [[languages.en.menu.main]]
-      url    = "/about/"
-      name   = "About"
-      weight = 1
+    # [[languages.en.menu.main]]
+    #   url    = "/about/"
+    #   name   = "About"
+    #   weight = 1
 
   [languages.fr]
     title = "CAD"
     weight = 2
     languageName = "CAD"
     languageCode = "fr"
-    [[languages.fr.menu.main]]
-      url    = "/fr/about/"
-      name   = "Sur"
-      weight = 1
+    # [[languages.fr.menu.main]]
+    #   url    = "/fr/about/"
+    #   name   = "Sur"
+    #   weight = 1
 
 [social]
   # Link your social networking accouns to the side menu
