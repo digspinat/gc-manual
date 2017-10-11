@@ -5,7 +5,13 @@
     <div class="row footer_title">
       <div class="col-md-4"></div>
       <div class="col-md-4">
-        <h6>Hello From Footer</h6>
+        <h6>
+          {{ range .Site.Pages }}
+            {{ if eq .Type "footer" }}
+              {{ .Description }}
+            {{ end }}
+          {{ end }}
+        </h6>
       </div>
       <div class="col-md-4"></div>
     </div>
