@@ -1,4 +1,6 @@
 - id: translations
-  translation: "Terjemahan:"
+  translation: "Currency:"
 - id: mylangcode
   translation: "fr"
+- id: sitetitle
+  translation: Manuel allemand de voiture
