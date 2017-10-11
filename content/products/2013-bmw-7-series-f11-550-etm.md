@@ -12,7 +12,6 @@ cylinders = "L6"
 date = "2017-10-10T17:16:09+00:00"
 displacement = 3430
 download_ID = 50013
-draft = true
 engine = "E5"
 engine_long = "long engine 19"
 fuel_type = "Desiel"
