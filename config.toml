@@ -1,5 +1,4 @@
 baseurl = "https://gc-manual.netlify.com/"
-languageCode = "en-us"
 title = "Blackburn Theme Demo"
 author = "Yoshiharu Yamashita"
 copyright = "&copy; 2016. All rights reserved."
@@ -24,35 +23,19 @@ paginate = 10
   highlightjs = "androidstudio"
   dateFormat = "02 Jan 2006, 15:04"
 
-[menu]
-  # Shown in the side menu.
-  [[menu.main]]
-    name = "Product"
+[languages]
+
+  [languages.en]
+    title = "USD"
     weight = 1
-    url = "/product/"
-  # [[menu.main]]
-  #   name = "Home"
-  #   pre = "<i class='fa fa-home fa-fw'></i>"
-  #   weight = 1
-  #   identifier = "home"
-  #   url = "/"
-  # [[menu.main]]
-  #   name = "Posts"
-  #   pre = "<i class='fa fa-list fa-fw'></i>"
-  #   weight = 2
-  #   identifier = "post"
-  #   url = "/post/"
-  # [[menu.main]]
-  #   name = "About"
-  #   pre = "<i class='fa fa-user fa-fw'></i>"
-  #   weight = 3
-  #   identifier = "about"
-  #   url = "/about/"
-  # [[menu.main]]
-  #   name = "Contact"
-  #   pre = "<i class='fa fa-phone fa-fw'></i>"
-  #   weight = 4
-  #   url = "/contact/"
+    languageName = "USD"
+    languageCode = "en-us"
+
+  [languages.fr]
+    title = "CAD"
+    weight = 2
+    languageName = "CAD"
+    languageCode = "fr"
 
 [social]
   # Link your social networking accouns to the side menu

@@ -1,0 +1,4 @@
+- id: translations
+  translation: "Translations:"
+- id: mylangcode
+  translation: "en"

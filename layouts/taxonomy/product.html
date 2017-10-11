@@ -24,7 +24,7 @@
 <script type="text/javascript">
     var client = algoliasearch("YZO8M6AZ6J", "847f24047332edf2bb6a0c1f0181b83e");
     var index = client.initIndex('new_gcm_car');
-
+    var lang_code = $("#lang_code").val();
     var searchBrand = $("#display_brand").val();
     var MainSearch = [];
     var BrandSearch = [];
@@ -86,30 +86,56 @@
         Manual_file_typeText += "<input type='checkbox' class='mySearch filetype' value='"+key+"'>&nbsp;<span class='gcm-header'>"+key+" ("+value+")</span><br>";
       });
       $("#my_manual").html(Manual_file_typeText);
+      if(lang_code == "en"){
+        var prodcuct = "";
+        $.each(res.hits, function( i, val ){
+          prodcuct += "<div class='col-md-4'>"+
+              "<div class='ibox'>"+
+                  "<div class='ibox-content product-box'>"+
+                      "<div class='product-imitation'>"+
+                          "<img src='"+val['Productpage_image']+"' alt='' height='200px;' width='200px;'>"+
+                      "</div>"+
+                      "<div class='product-desc'>"+
+                          "<span class='product-price'>"+
+                              "Price: "+val['Currency']+" "+val['Price']+
+                          "</span>"+
+                          "<small class='text-muted'></small>"+
+                          "<a href='/products/"+lang_code+"/"+val['Car_ID']+"' class='product-name'>"+val['Title']+"</a>"+
+                          "<div class='m-t text-righ'>"+
+                              "<a href='/products/"+lang_code+"/"+val['Car_ID']+"' class='btn btn-xs btn-outline btn-primary'>Info <i class='fa fa-long-arrow-right'></i></a>"+
+                          "</div>"+
+                      "</div>"+
+                  "</div>"+
+              "</div>"+
+          "</div>";
+        });
+        $("#productdata").html(prodcuct);
+      }else{
+        var prodcuct = "";
+        $.each(res.hits, function( i, val ){
+          prodcuct += "<div class='col-md-4'>"+
+              "<div class='ibox'>"+
+                  "<div class='ibox-content product-box'>"+
+                      "<div class='product-imitation'>"+
+                          "<img src='"+val['Productpage_image']+"' alt='' height='200px;' width='200px;'>"+
+                      "</div>"+
+                      "<div class='product-desc'>"+
+                          "<span class='product-price'>"+
+                              "Price: "+val['Currency']+" "+val['Price']+
+                          "</span>"+
+                          "<small class='text-muted'></small>"+
+                          "<a href='/"+lang_code+"/products/"+lang_code+"/"+val['Car_ID']+"' class='product-name'>"+val['Title']+"</a>"+
+                          "<div class='m-t text-righ'>"+
+                              "<a href='/"+lang_code+"/products/"+lang_code+"/"+val['Car_ID']+"' class='btn btn-xs btn-outline btn-primary'>Info <i class='fa fa-long-arrow-right'></i></a>"+
+                          "</div>"+
+                      "</div>"+
+                  "</div>"+
+              "</div>"+
+          "</div>";
+        });
+        $("#productdata").html(prodcuct);
+      }
 
-      var prodcuct = "";
-      $.each(res.hits, function( i, val ){
-        prodcuct += "<div class='col-md-4'>"+
-            "<div class='ibox'>"+
-                "<div class='ibox-content product-box'>"+
-                    "<div class='product-imitation'>"+
-                        "<img src='"+val['Productpage_image']+"' alt='' height='200px;' width='200px;'>"+
-                    "</div>"+
-                    "<div class='product-desc'>"+
-                        "<span class='product-price'>"+
-                            "Price: "+val['Currency']+" "+val['Price']+
-                        "</span>"+
-                        "<small class='text-muted'></small>"+
-                        "<a href='/products/"+val['Car_ID']+"' class='product-name'>"+val['Title']+"</a>"+
-                        "<div class='m-t text-righ'>"+
-                            "<a href='/products/"+val['Car_ID']+"' class='btn btn-xs btn-outline btn-primary'>Info <i class='fa fa-long-arrow-right'></i></a>"+
-                        "</div>"+
-                    "</div>"+
-                "</div>"+
-            "</div>"+
-        "</div>";
-      });
-      $("#productdata").html(prodcuct);
 
     });
 

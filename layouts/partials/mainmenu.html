@@ -32,6 +32,13 @@
     <div class="main-menu main-menu1  pure-u-1 pure-u-md-1-3">
         <div class="pure-menu pure-menu-horizontal custom-menu-3 custom-can-transform">
             <ul class="pure-menu-list">
+              {{ if .IsTranslated }}
+                &middot; {{ i18n "translations" }}
+                {{ range .Translations }}
+                    {{ $curLang := index (where $.Site.Languages "Lang" .Lang) 0 }}
+                    <a href="{{ .Permalink }}">{{ $curLang.LanguageName }}</a>
+                {{ end }}
+              {{ end }}
                 <!-- <li class="pure-menu-item menu-item-main"><a href="#" class="pure-menu-link menu-color-white">Yahoo</a></li>
                 <li class="pure-menu-item menu-item-main"><a href="#" class="pure-menu-link menu-color-white">W3C</a></li> -->
             </ul>
@@ -39,11 +46,12 @@
     </div>
   </div>
 </div>
+<input type="hidden" value='{{ i18n "mylangcode" }}' id="lang_code">
 <script type="text/javascript">
   $(document).ready(function(){
+    var lang_code = $("#lang_code").val();
     var client = algoliasearch("YZO8M6AZ6J", "847f24047332edf2bb6a0c1f0181b83e");
     var index = client.initIndex('new_gcm_car');
-
       index.search({
         query: '*',
         distinct: true,
@@ -52,14 +60,26 @@
         // console.log(res);
         var Brand = ""
         $.each(res.hits, function( i, val ){
-          if(val['Make'] == "BMW"){
-            Brand += "<li class='pure-menu-item menu-item-main'><a href='/make/bmw/' class='pure-menu-link'>"+val['Make']+"</a></li>";
-          }
-          if(val['Make'] == "volkswagan"){
-            Brand += "<li class='pure-menu-item menu-item-main'><a href='/make/volkswagan/' class='pure-menu-link'>"+val['Make']+"</a></li>"
-          }
-          if(val['Make'] == "Audi"){
-            Brand += "<li class='pure-menu-item menu-item-main'><a href='/make/audi/' class='pure-menu-link'>"+val['Make']+"</a></li>"
+          if(lang_code == "en"){
+            if(val['Make'] == "BMW"){
+              Brand += "<li class='pure-menu-item menu-item-main'><a href='/make/bmw/' class='pure-menu-link'>"+val['Make']+"</a></li>";
+            }
+            if(val['Make'] == "volkswagan"){
+              Brand += "<li class='pure-menu-item menu-item-main'><a href='/make/volkswagan/' class='pure-menu-link'>"+val['Make']+"</a></li>"
+            }
+            if(val['Make'] == "Audi"){
+              Brand += "<li class='pure-menu-item menu-item-main'><a href='/make/audi/' class='pure-menu-link'>"+val['Make']+"</a></li>"
+            }
+          }else{
+            if(val['Make'] == "BMW"){
+              Brand += "<li class='pure-menu-item menu-item-main'><a href='/fr/make/bmw/' class='pure-menu-link'>"+val['Make']+"</a></li>";
+            }
+            if(val['Make'] == "volkswagan"){
+              Brand += "<li class='pure-menu-item menu-item-main'><a href='/fr/make/volkswagan/' class='pure-menu-link'>"+val['Make']+"</a></li>"
+            }
+            if(val['Make'] == "Audi"){
+              Brand += "<li class='pure-menu-item menu-item-main'><a href='/fr/make/audi/' class='pure-menu-link'>"+val['Make']+"</a></li>"
+            }
           }
         });
         $("#brand_dis").html(Brand);
