@@ -1,56 +1,36 @@
-baseurl = "https://gc-manual.netlify.com/"
-title = "Blackburn Theme Demo"
 author = "Yoshiharu Yamashita"
-copyright = "&copy; 2016. All rights reserved."
+baseurl = "https://gc-manual.netlify.com/"
 canonifyurls = true
+copyright = "&copy; 2016. All rights reserved."
 paginate = 10
-
+title = "Blackburn Theme Demo"
 [indexes]
-  tag = "tags"
-  topic = "topics"
-  product = "make"
-
-[taxonomy]
-  product = "make"
-
+product = "make"
+tag = "tags"
+topic = "topics"
+[languages.en]
+languageCode = "en-us"
+languageName = "USD"
+title = "USD"
+weight = 1
+[languages.fr]
+languageCode = "fr"
+languageName = "CAD"
+title = "CAD"
+weight = 2
 [params]
-  # Shown in the home page
-  subtitle = "A Hugo Theme"
-  brand = "Blackburn"
-  googleAnalytics = "Your Google Analytics tracking ID"
-  disqus = "Your Disqus shortname"
-  # CSS name for highlight.js
-  highlightjs = "androidstudio"
-  dateFormat = "02 Jan 2006, 15:04"
-
-[languages]
-
-  [languages.en]
-    title = "USD"
-    weight = 1
-    languageName = "USD"
-    languageCode = "en-us"
-    # [[languages.en.menu.main]]
-    #   url    = "/about/"
-    #   name   = "About"
-    #   weight = 1
-
-  [languages.fr]
-    title = "CAD"
-    weight = 2
-    languageName = "CAD"
-    languageCode = "fr"
-    # [[languages.fr.menu.main]]
-    #   url    = "/fr/about/"
-    #   name   = "Sur"
-    #   weight = 1
-
+brand = "Blackburn"
+dateformat = "2006-01-02T00:00:00+00:00"
+disqus = "Your Disqus shortname"
+googleanalytics = "Your Google Analytics tracking ID"
+highlightjs = "androidstudio"
+subtitle = "A Hugo Theme"
 [social]
-  # Link your social networking accouns to the side menu
-  # by entering your username or ID.
-  twitter = "*"
-  facebook = "*"
-  instagram = "*"
-  github = "yoshiharuyamashita"
-  stackoverflow = "*"
-  linkedin = "*"
+facebook = "*"
+github = "yoshiharuyamashita"
+instagram = "*"
+linkedin = "*"
+stackoverflow = "*"
+twitter = "*"
+[taxonomy]
+product = "make"
