@@ -17,7 +17,7 @@ engine = "E5"
 engine_long = "long engine 19"
 fuel_type = "Desiel"
 horse_power = 218
-id = ""
+id = "singleproduct"
 language = "English"
 make = ["Audi"]
 manual_covers = "Item | Value -------- | --- Computer | $1600 Phone | $12 Pipe | $19"
@@ -52,7 +52,6 @@ sub_serie = "F11"
 table_of_content = "##The manual covers:##   - General Maintenance  - Troubleshooting  - Engine Service / Repair  - Transmission Service / Repair  - Brake System  - Wiring Diagram  - Electrical System  - Suspension  - Periodic Lubrication  - Steering  - Cooling System  - Fuel Injection / Fuel System  - Emission System  - Heater/ Air Conditional  - Engine Control System  - Chassis / Body  - Restraint System  - Interior  - Differential / Drive  - Axle"
 title = "2013 - BMW - 7 - Series (F11) 550 | ETM"
 torque_Nm = 310
-type = ""
 website = "GCM"
 year = 2013
 
