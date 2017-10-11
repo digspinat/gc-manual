@@ -90,23 +90,23 @@
         $.each(res.hits, function( i, val ){
           if(lang_code == "en"){
             if(val['Make'] == "BMW"){
-              Brand += "<li class='pure-menu-item gcm-header'><a href='/make/bmw/' class='pure-menu-link'>"+val['Make']+"</a></li>";
+              Brand += "<li class='pure-menu-item gcm-header gcm-brand'><a href='/make/bmw/' class='pure-menu-link'>"+val['Make']+"</a></li>";
             }
             if(val['Make'] == "volkswagan"){
-              Brand += "<li class='pure-menu-item gcm-header'><a href='/make/volkswagan/' class='pure-menu-link'>"+val['Make']+"</a></li>"
+              Brand += "<li class='pure-menu-item gcm-header gcm-brand'><a href='/make/volkswagan/' class='pure-menu-link'>"+val['Make']+"</a></li>"
             }
             if(val['Make'] == "Audi"){
-              Brand += "<li class='pure-menu-item gcm-header'><a href='/make/audi/' class='pure-menu-link'>"+val['Make']+"</a></li>"
+              Brand += "<li class='pure-menu-item gcm-header gcm-brand'><a href='/make/audi/' class='pure-menu-link'>"+val['Make']+"</a></li>"
             }
           }else{
             if(val['Make'] == "BMW"){
-              Brand += "<li class='pure-menu-item gcm-header'><a href='/fr/make/bmw/' class='pure-menu-link'>"+val['Make']+"</a></li>";
+              Brand += "<li class='pure-menu-item gcm-header gcm-brand'><a href='/fr/make/bmw/' class='pure-menu-link'>"+val['Make']+"</a></li>";
             }
             if(val['Make'] == "volkswagan"){
-              Brand += "<li class='pure-menu-item gcm-header'><a href='/fr/make/volkswagan/' class='pure-menu-link'>"+val['Make']+"</a></li>"
+              Brand += "<li class='pure-menu-item gcm-header gcm-brand'><a href='/fr/make/volkswagan/' class='pure-menu-link'>"+val['Make']+"</a></li>"
             }
             if(val['Make'] == "Audi"){
-              Brand += "<li class='pure-menu-item gcm-header'><a href='/fr/make/audi/' class='pure-menu-link'>"+val['Make']+"</a></li>"
+              Brand += "<li class='pure-menu-item gcm-header gcm-brand'><a href='/fr/make/audi/' class='pure-menu-link'>"+val['Make']+"</a></li>"
             }
           }
         });

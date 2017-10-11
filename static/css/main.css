@@ -3,6 +3,16 @@
   /*border-color: #2196F3;*/
   border: 1px solid #2196F3;
 }
+.gcm-brand a {
+  color: black;
+}
+.gcm-brand a:visited {
+  color: black;
+}
+.gcm-brand a:hover {
+  color: white;
+  background-color: black;
+}
 /*Container CSS*/
 .my_content{
   margin-bottom: 130px;
@@ -74,7 +84,9 @@ footer{
       .menu-color-white{
         color: white;
       }
-
+      .menu-item-main a {
+        color: white;
+      }
       .menu-item-main a:visited{
         color: white;
         background-color: black;
@@ -84,6 +96,7 @@ footer{
       }
       .menu-item-main a:hover{
         color: white;
+        background-color: black;
       }
 
       .custom-wrapper.open {
