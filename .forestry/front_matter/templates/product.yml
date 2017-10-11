@@ -1,4 +1,6 @@
 ---
+pages:
+- products/2013-bmw-7-series-f11-550-etm.md
 hide_body: false
 fields:
 - name: car_ID
