@@ -1,3 +1,15 @@
+.my_content{
+  background-color: #7a8690;
+}
+.container{
+  background-color: white;
+}
+.my-submenu{
+  padding-right: 0px;
+  padding-left: 0px;
+  background-color: #7a8690;
+}
+
 /*Filter CSS*/
 .filter{
   /*border-color: #2196F3;*/
@@ -15,8 +27,9 @@
 }
 /*Container CSS*/
 .my_content{
-  margin-bottom: 130px;
+  margin-bottom: 100px;
 }
+
 .gcm-header{
   color: black;
   padding: 4px;

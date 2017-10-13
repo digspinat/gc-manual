@@ -48,13 +48,7 @@
                 <li class="pure-menu-item menu-item-main"><a href="{{ .URL }}" class="pure-menu-link menu-color-white">{{ .Name }}</a></li>
                 {{end}}
                 {{end}}
-                {{ if .IsTranslated }}
-                  {{ range .Translations }}
-                      {{ $curLang := index (where $.Site.Languages "Lang" .Lang) 0 }}
-                      <li class="pure-menu-item menu-item-main"><a href="{{ .Permalink }}" class="pure-menu-link menu-color-white">{{ $curLang.LanguageName }}</a></li>
-                      <!-- <a href="{{ .Permalink }}">{{ $curLang.LanguageName }}</a> -->
-                  {{ end }}
-                {{ end }}
+
 
                   <!-- <li class="pure-menu-item menu-item-main"><a href="#" class="pure-menu-link menu-color-white">Yahoo</a></li>
                   <li class="pure-menu-item menu-item-main"><a href="#" class="pure-menu-link menu-color-white">W3C</a></li> -->
@@ -63,17 +57,23 @@
     </div>
   </div>
 </div>
-<div class="pure-menu pure-menu-horizontal pure-menu-scrollable" style="background-color:#e1e9ee;">
-    <div class=" pure-g">
-      <div class="pure-u-3-24"></div>
-      <div class="pure-u-18-24">
-        <ul class="pure-menu-list" id="brand_dis">
-        </ul>
-      </div>
-      <div class="pure-u-3-24"></div>
-    </div>
+<div class="">
+
 </div>
-<br>
+  <div class="container-fluid my-submenu">
+    <div class="container" style="background-color:#e1e9ee;">
+      <div class="pure-menu pure-menu-horizontal pure-menu-scrollable" style="margin-top:-16px;">
+        <div class=" pure-g">
+          <div class="pure-u-3-24" style=""></div>
+          <div class="pure-u-18-24">
+            <ul class="pure-menu-list" id="brand_dis">
+            </ul>
+          </div>
+          <div class="pure-u-3-24" style=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
 <input type="hidden" value='{{ i18n "mylangcode" }}' id="lang_code">
 <script type="text/javascript">
   $(document).ready(function(){
