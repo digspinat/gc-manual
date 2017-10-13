@@ -28,6 +28,8 @@ fields:
   default: ''
 - type: text
   default: Make 2
+  name: make
+  label: make
 - name: serie
   label: Serie
   type: text
