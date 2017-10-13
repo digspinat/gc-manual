@@ -1,9 +1,4 @@
 ---
-pages:
-- about-us.md
-- contact.md
-- customer-service.md
-- home.md
 hide_body: false
 fields:
 - name: date
