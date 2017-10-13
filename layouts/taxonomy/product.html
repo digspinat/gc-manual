@@ -1,16 +1,23 @@
 {{ partial "header.html" . }}
 <div class="my_content">
   <div class="container">
-    <div class="header">
-      <h1>{{ .Title }}</h1>
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-9 header text-left">
+        <h1>{{ .Title }}</h1>
+      </div>
     </div>
+    <!-- <div class="header">
+    </div> -->
     <div class="row">
       <div class="col-md-3 filter">
         {{ partial "filter.html" . }}
       </div>
       <div class="col-md-9">
         <div class="row" id="productdata">
-
+          {{ range .Data.Pages }}
+            {{ .Render "summary"}}
+          {{ end }}
         </div>
         <div>
           <nav aria-label="Page navigation example">
@@ -27,7 +34,7 @@
     <input type="hidden" id="display_brand" value="{{ .Title }}">
   </form>
 </div>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     var pageIndex = 0;
     var client = algoliasearch("YZO8M6AZ6J", "847f24047332edf2bb6a0c1f0181b83e");
     var index = client.initIndex('new_gcm_car');
@@ -100,7 +107,7 @@
               "<div class='ibox'>"+
                   "<div class='ibox-content product-box'>"+
                       "<div class='product-imitation'>"+
-                          "<img src='"+val['Image_prod_page']+"' alt='' height='200px;' width='200px;'>"+
+                          "<a href='/manuals/"+lang_code+"/"+val['SKU']+"'><img src='"+val['Image_prod_page']+"' alt='' height='200px;' width='200px;'></a>"+
                       "</div>"+
                       "<div class='product-desc'>"+
                           "<small class='text-muted'></small>"+
@@ -121,7 +128,7 @@
               "<div class='ibox'>"+
                   "<div class='ibox-content product-box'>"+
                       "<div class='product-imitation'>"+
-                          "<img src='"+val['Image_prod_page']+"' alt='' height='200px;' width='200px;'>"+
+                          "<a href='/"+lang_code+"/manuals/"+lang_code+"/"+val['SKU']+"'><img src='"+val['Image_prod_page']+"' alt='' height='200px;' width='200px;'></a>"+
                       "</div>"+
                       "<div class='product-desc'>"+
                           "<small class='text-muted'></small>"+
@@ -283,7 +290,7 @@
                 "<div class='ibox'>"+
                     "<div class='ibox-content product-box'>"+
                         "<div class='product-imitation'>"+
-                            "<img src='"+val['Image_prod_page']+"' alt='' height='200px;' width='200px;'>"+
+                            "<a href='/manuals/"+lang_code+"/"+val['SKU']+"'><img src='"+val['Image_prod_page']+"' alt='' height='200px;' width='200px;'></a>"+
                         "</div>"+
                         "<div class='product-desc'>"+
                             "<small class='text-muted'></small>"+
@@ -304,7 +311,7 @@
                 "<div class='ibox'>"+
                     "<div class='ibox-content product-box'>"+
                         "<div class='product-imitation'>"+
-                            "<img src='"+val['Image_prod_page']+"' alt='' height='200px;' width='200px;'>"+
+                            "<a href='/"+lang_code+"/manuals/"+lang_code+"/"+val['SKU']+"'><img src='"+val['Image_prod_page']+"' alt='' height='200px;' width='200px;'></a>"+
                         "</div>"+
                         "<div class='product-desc'>"+
                             "<small class='text-muted'></small>"+
@@ -464,7 +471,7 @@
                 "<div class='ibox'>"+
                     "<div class='ibox-content product-box'>"+
                         "<div class='product-imitation'>"+
-                            "<img src='"+val['Image_prod_page']+"' alt='' height='200px;' width='200px;'>"+
+                            "<a href='/manuals/"+lang_code+"/"+val['SKU']+"'><img src='"+val['Image_prod_page']+"' alt='' height='200px;' width='200px;'></a>"+
                         "</div>"+
                         "<div class='product-desc'>"+
                             "<small class='text-muted'></small>"+
@@ -485,7 +492,7 @@
                 "<div class='ibox'>"+
                     "<div class='ibox-content product-box'>"+
                         "<div class='product-imitation'>"+
-                            "<img src='"+val['Image_prod_page']+"' alt='' height='200px;' width='200px;'>"+
+                            "<a href='/"+lang_code+"/manuals/"+lang_code+"/"+val['SKU']+"'><img src='"+val['Image_prod_page']+"' alt='' height='200px;' width='200px;'></a>"+
                         "</div>"+
                         "<div class='product-desc'>"+
                             "<small class='text-muted'></small>"+
@@ -585,7 +592,7 @@
                   "<div class='ibox'>"+
                       "<div class='ibox-content product-box'>"+
                           "<div class='product-imitation'>"+
-                              "<img src='"+val['Image_prod_page']+"' alt='' height='200px;' width='200px;'>"+
+                              "<a href='/manuals/"+lang_code+"/"+val['SKU']+"'><img src='"+val['Image_prod_page']+"' alt='' height='200px;' width='200px;'></a>"+
                           "</div>"+
                           "<div class='product-desc'>"+
                               "<small class='text-muted'></small>"+
@@ -606,7 +613,7 @@
                   "<div class='ibox'>"+
                       "<div class='ibox-content product-box'>"+
                           "<div class='product-imitation'>"+
-                              "<img src='"+val['Image_prod_page']+"' alt='' height='200px;' width='200px;'>"+
+                              "<a href='/"+lang_code+"/manuals/"+lang_code+"/"+val['SKU']+"'><img src='"+val['Image_prod_page']+"' alt='' height='200px;' width='200px;'></a>"+
                           "</div>"+
                           "<div class='product-desc'>"+
                               "<small class='text-muted'></small>"+
@@ -631,5 +638,5 @@
       pageIndex++;
     });
 
-</script>
+</script> -->
 {{ partial "footer.html" . }}
