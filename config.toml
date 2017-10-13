@@ -10,7 +10,20 @@ title = "Blackburn Theme Demo"
   tag = "tags"
   topic = "topics"
 
+[menu]
+  [[menu.main]]
+      name = "BMW"
+      weight = 1
+      identifier = "bmw"
+      url = "/make/bmw/"
+  [[menu.main]]
+      name = "Audi"
+      weight = 2
+      identifier = "audi"
+      url = "/make/audi/"
+
 [languages]
+
   [languages.en]
     languageCode = "en-us"
     languageName = "USD"

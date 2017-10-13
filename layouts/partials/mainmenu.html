@@ -45,7 +45,7 @@
                   {{ end }}
                 </ul>
                 {{else}}
-                <li class="pure-menu-item menu-item-main"><a href="{{ .URL }}" class="pure-menu-link menu-color-white">{{ .Name }}</a></li>
+                <!-- <li class="pure-menu-item menu-item-main"><a href="{{ .URL }}" class="pure-menu-link menu-color-white">{{ .Name }}</a></li> -->
                 {{end}}
                 {{end}}
 
@@ -67,8 +67,21 @@
           <div class="pure-u-3-24" style=""></div>
           <div class="pure-u-18-24">
             <ul class="pure-menu-list" id="brand_dis">
-              <li class="pure-menu-item menu-item-main"><a href="/make/bmw/" class="pure-menu-link menu-color-white">BMW</a></li>
-              <li class="pure-menu-item menu-item-main"><a href="/make/audi/" class="pure-menu-link menu-color-white">Audi</a></li>
+              {{ range .Site.Menus.main }}
+                {{ if .HasChildren }}
+                <li class="pure-menu-item pure-menu-has-children">
+                <a class="pure-menu-link" href="#">{{ .Pre }}{{ .Name }}</a>
+                <ul class="pure-menu-children">
+                  {{ range .Children }}
+                  <li class="pure-menu-item">
+                    <a href="{{ .URL }}">{{ .Name }}</a>
+                  </li>
+                  {{ end }}
+                </ul>
+                {{else}}
+                <li class="pure-menu-item gcm-brand"><a href="{{ .URL }}" class="pure-menu-link menu-color-white">{{ .Name }}</a></li>
+                {{end}}
+              {{end}}
             </ul>
           </div>
           <div class="pure-u-3-24" style=""></div>

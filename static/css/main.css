@@ -1,3 +1,7 @@
+.home_page{
+  height: 600px;
+}
+
 .my_content{
   background-color: #7a8690;
 }
@@ -8,6 +12,32 @@
   padding-right: 0px;
   padding-left: 0px;
   background-color: #7a8690;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: inherit;
+    transition: all .5s;
+}
+.owl-image img {
+  height: 38px;
+  width: 95px;
+}
+
+.my-active{
+  font-size: 20px;
+  font-weight: 400px;
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-primary.btn-outline {
+    color: #428bca;
+}
+
+
+.btn-primary.btn-outline:hover{
+    color: #fff;
 }
 
 /*Filter CSS*/
@@ -23,7 +53,7 @@
 }
 .gcm-brand a:hover {
   color: white;
-  background-color: black;
+  background-color: #007bff;
 }
 /*Container CSS*/
 .my_content{

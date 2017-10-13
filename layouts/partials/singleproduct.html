@@ -30,30 +30,49 @@
   <div class="row padding-top">
     <div class="col-md-12">
       <ul class="list-group">
-        <li class="list-group-item"><span class="gcm-header">Manual File type:</span> <strong>{{ .Params.manual_file_type }}</strong></li>
-        <li class="list-group-item"><span class="gcm-header">Manual file:</span> <strong>{{ .Params.manual_type }}</strong></li>
-        <li class="list-group-item"><span class="gcm-header">Manual pages:</span> <strong>{{ .Params.manual_pages }}</strong></li>
-        <li class="list-group-item"><span class="gcm-header">Manual size:</span> <strong>{{ .Params.manual_size }}</strong></li>
+        <li class="list-group-item my-active"><span class="">File Information</li>
+        <li class="list-group-item">
+          <table class="table">
+            <tr class="text-center">
+              <td><span class="gcm-header">No. of Pages:</span> {{ .Params.manual_pages }}</td>
+              <td><span class="gcm-header">File size download:</span> {{ .Params.manual_size }}</td>
+              <td><span class="gcm-header">File type:</span> {{ .Params.manual_type }}</td>
+              <td><span class="gcm-header">File:</span> {{ .Params.manual_file_type }}</td>
+            </tr>
+          </table>
+        </li>
       </ul>
     </div>
   </div>
   <div class="row padding-top">
     <div class="col-md-12">
-      <h3 class="gcm-header">Partial Advantages</h3>
-      <p>{{ .Params.pg_adv_desc_md }}</p>
+      <ul class="list-group">
+        <li class="list-group-item my-active"><span class="">Partial Advantages</li>
+        <li class="list-group-item">
+          {{ .Params.pg_adv_desc_md }}
+        </li>
+      </ul>
     </div>
   </div>
   <div class="row padding-top">
     <div class="col-md-12">
-      <h3 class="gcm-header">Description</h3>
-      <p>{{ .Description }}</p>
+      <ul class="list-group">
+        <li class="list-group-item my-active"><span class="">Description</li>
+        <li class="list-group-item">
+          {{ .Description }}
+        </li>
+      </ul>
     </div>
   </div>
-  <div class="panel padding-top">
-    <div class="panel-heading">
-        <h3 class="panel-title gcm-header">Manual Covers</h3>
+  <div class="row padding-top">
+    <div class="col-md-12">
+      <ul class="list-group">
+        <li class="list-group-item my-active"><span class="">Manual Covers</li>
+        <li class="list-group-item">
+          {{ .Params.manual_covers }}
+        </li>
+      </ul>
     </div>
-    <div class="panel-body">{{ .Params.manual_covers }}</div>
   </div>
   <div class="panel padding-top">
     <div class="panel-heading">
