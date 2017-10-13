@@ -161,7 +161,7 @@ fields:
   hidden: false
   default: ''
 - name: manual_type
-  label: Manual type
+  label: Type
   type: text
   hidden: false
   default: ''
@@ -176,12 +176,12 @@ fields:
   hidden: false
   default: ''
 - name: manual_pages
-  label: Manual pages
+  label: No. of pages
   type: text
   hidden: false
   default: ''
 - name: manual_size
-  label: Manual size
+  label: Download size
   type: text
   hidden: false
   default: ''
