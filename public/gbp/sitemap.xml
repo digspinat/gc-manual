@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://gc-manual.netlify.com/gbp/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://gc-manual.netlify.com/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="gbp"
+                href="https://gc-manual.netlify.com/gbp/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://gc-manual.netlify.com/gbp/make/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://gc-manual.netlify.com/make/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="gbp"
+                href="https://gc-manual.netlify.com/gbp/make/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://gc-manual.netlify.com/gbp/tags/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://gc-manual.netlify.com/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="gbp"
+                href="https://gc-manual.netlify.com/gbp/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://gc-manual.netlify.com/gbp/topics/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://gc-manual.netlify.com/topics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="gbp"
+                href="https://gc-manual.netlify.com/gbp/topics/"
+                />
+  </url>
+  
+</urlset>
