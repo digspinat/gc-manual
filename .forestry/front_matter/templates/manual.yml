@@ -27,7 +27,7 @@ fields:
   hidden: false
   default: ''
 - type: text
-  default: Make 2
+  default: Make
   name: make
   label: make
 - name: serie
