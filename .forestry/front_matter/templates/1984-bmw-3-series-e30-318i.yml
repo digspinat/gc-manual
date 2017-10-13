@@ -1,0 +1,348 @@
+---
+hide_body: false
+fields:
+- name: car_id
+  label: Car id
+  type: text
+  hidden: false
+  default: ''
+- name: car_id_merged
+  label: Car id merged
+  type: text
+  hidden: false
+  default: ''
+- name: sku
+  label: Sku
+  type: text
+  hidden: false
+  default: ''
+- name: download_id
+  label: Download id
+  type: text
+  hidden: false
+  default: ''
+- name: website
+  label: Website
+  type: text
+  hidden: false
+  default: ''
+- name: make
+  label: Make
+  type: tag_list
+  hidden: false
+  default: ''
+- name: serie
+  label: Serie
+  type: text
+  hidden: false
+  default: ''
+- name: sub_serie
+  label: Sub serie
+  type: text
+  hidden: false
+  default: ''
+- name: platform
+  label: Platform
+  type: text
+  hidden: false
+  default: ''
+- name: engine
+  label: Engine
+  type: text
+  hidden: false
+  default: ''
+- name: year
+  label: Year
+  type: text
+  hidden: false
+  default: ''
+- name: body_type
+  label: Body type
+  type: text
+  hidden: false
+  default: ''
+- name: fuel_type
+  label: Fuel type
+  type: text
+  hidden: false
+  default: ''
+- name: engine_long
+  label: Engine long
+  type: text
+  hidden: false
+  default: ''
+- name: no_of_doors
+  label: No of doors
+  type: text
+  hidden: false
+  default: ''
+- name: cylinders
+  label: Cylinders
+  type: text
+  hidden: false
+  default: ''
+- name: displacement
+  label: Displacement
+  type: text
+  hidden: false
+  default: ''
+- name: power_kw
+  label: Power kw
+  type: text
+  hidden: false
+  default: ''
+- name: horse_power
+  label: Horse power
+  type: text
+  hidden: false
+  default: ''
+- name: torque_nm
+  label: Torque nm
+  type: text
+  hidden: false
+  default: ''
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: description
+  label: Description
+  type: text
+  hidden: false
+  default: ''
+- name: description_id
+  label: Description id
+  type: text
+  hidden: false
+  default: ''
+- name: manual_covers
+  label: Manual covers
+  type: text
+  hidden: false
+  default: ''
+- name: man_cov_id
+  label: Man cov id
+  type: text
+  hidden: false
+  default: ''
+- name: toc_descr
+  label: Toc descr
+  type: text
+  hidden: false
+  default: ''
+- name: toc_id
+  label: Toc id
+  type: text
+  hidden: false
+  default: ''
+- name: currency
+  label: Currency
+  type: text
+  hidden: false
+  default: ''
+- name: price
+  label: Price
+  type: text
+  hidden: false
+  default: ''
+- name: sendowl
+  label: Sendowl
+  type: textarea
+  hidden: false
+  default: ''
+- name: aff_link
+  label: Aff link
+  type: text
+  hidden: false
+  default: ''
+- name: amazon_url
+  label: Amazon url
+  type: text
+  hidden: false
+  default: ''
+- name: manual_type
+  label: Manual type
+  type: text
+  hidden: false
+  default: ''
+- name: manual_type_gs
+  label: Manual type gs
+  type: text
+  hidden: false
+  default: ''
+- name: manual_type_facet
+  label: Manual type facet
+  type: text
+  hidden: false
+  default: ''
+- name: manual_pages
+  label: Manual pages
+  type: text
+  hidden: false
+  default: ''
+- name: manual_size
+  label: Manual size
+  type: text
+  hidden: false
+  default: ''
+- name: manual_file_type
+  label: Manual file type
+  type: text
+  hidden: false
+  default: ''
+- name: language
+  label: Language
+  type: text
+  hidden: false
+  default: ''
+- name: image_prod_page
+  label: Image prod page
+  type: text
+  hidden: false
+  default: ''
+- name: image_cat_page
+  label: Image cat page
+  type: text
+  hidden: false
+  default: ''
+- name: preview_01
+  label: Preview 01
+  type: text
+  hidden: false
+  default: ''
+- name: preview_02
+  label: Preview 02
+  type: text
+  hidden: false
+  default: ''
+- name: preview_03
+  label: Preview 03
+  type: text
+  hidden: false
+  default: ''
+- name: preview_04
+  label: Preview 04
+  type: text
+  hidden: false
+  default: ''
+- name: car_image_01
+  label: Car image 01
+  type: text
+  hidden: false
+  default: ''
+- name: car_image_02
+  label: Car image 02
+  type: text
+  hidden: false
+  default: ''
+- name: car_image_03
+  label: Car image 03
+  type: text
+  hidden: false
+  default: ''
+- name: car_image_04
+  label: Car image 04
+  type: text
+  hidden: false
+  default: ''
+- name: car_image_05
+  label: Car image 05
+  type: text
+  hidden: false
+  default: ''
+- name: related_products_01
+  label: Related products 01
+  type: text
+  hidden: false
+  default: ''
+- name: related_products_02
+  label: Related products 02
+  type: text
+  hidden: false
+  default: ''
+- name: related_products_03
+  label: Related products 03
+  type: text
+  hidden: false
+  default: ''
+- name: related_products_04
+  label: Related products 04
+  type: text
+  hidden: false
+  default: ''
+- name: product_groups_01
+  label: Product groups 01
+  type: text
+  hidden: false
+  default: ''
+- name: product_groups_02
+  label: Product groups 02
+  type: text
+  hidden: false
+  default: ''
+- name: product_groups_03
+  label: Product groups 03
+  type: text
+  hidden: false
+  default: ''
+- name: product_groups_04
+  label: Product groups 04
+  type: text
+  hidden: false
+  default: ''
+- name: product_groups_05
+  label: Product groups 05
+  type: text
+  hidden: false
+  default: ''
+- name: product_groups_06
+  label: Product groups 06
+  type: text
+  hidden: false
+  default: ''
+- name: pg_adv_id
+  label: Pg adv id
+  type: text
+  hidden: false
+  default: ''
+- name: pg_adv_desc_md
+  label: Pg adv desc md
+  type: text
+  hidden: false
+  default: ''
+- name: pg_dadvan_id
+  label: Pg dadvan id
+  type: text
+  hidden: false
+  default: ''
+- name: pg_dadv_desc_md
+  label: Pg dadv desc md
+  type: text
+  hidden: false
+  default: ''
+- name: pgatc_id
+  label: Pgatc id
+  type: text
+  hidden: false
+  default: ''
+- name: pgatc_desc_md
+  label: Pgatc desc md
+  type: textarea
+  hidden: false
+  default: ''
+- name: pg_download_id
+  label: Pg download id
+  type: text
+  hidden: false
+  default: ''
+- name: pgd_desc_desc_md
+  label: Pgd desc desc md
+  type: text
+  hidden: false
+  default: ''
+- name: type
+  label: Type
+  type: text
+  hidden: false
+  default: ''
