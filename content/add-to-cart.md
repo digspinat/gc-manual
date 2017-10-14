@@ -10,7 +10,7 @@ title = "Add to cart"
 
 * <span style="font-size: 1rem;">&lt;i class="icon-upload"&gt;&lt;/i&gt; Manage document publication</span>
 
-* Add to cart list item 2
+* <i class="fa fa-check" aria-hidden="true"></i>Add to cart list item 2
 
 * Add to cart list item 3
 
