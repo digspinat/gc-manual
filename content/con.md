@@ -1,7 +1,6 @@
 +++
-draft = true
+draft = false
 title = "Con"
-[date]
 
 +++
 

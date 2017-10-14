@@ -1,7 +1,6 @@
 +++
-draft = true
+draft = false
 title = "Pro"
-[date]
 
 +++
 
@@ -15,4 +14,3 @@ title = "Pro"
 - Pro 4
 
 - Pro 5
-

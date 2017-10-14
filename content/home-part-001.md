@@ -1,7 +1,6 @@
 +++
-draft = true
+draft = false
 title = "Home part 001"
-[date]
 
 +++
 
@@ -11,4 +10,3 @@ After publishing, StackEdit will keep your document linked to that publication w
 > **Note:** The <i class="icon-upload"></i> button is disabled when your document has not been published yet.
 
 #### <i class="icon-upload"></i> Manage document publication
-

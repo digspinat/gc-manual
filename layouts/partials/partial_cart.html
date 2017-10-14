@@ -1,7 +1,9 @@
 <div class="row padding-top">
   <div class="col-md-12">
-    <ul class="list-group">
-      <li class="list-group-item"><span class="gcm-header">From Partial Cart Button</span></li>
-    </ul>
+    {{ range .Site.Pages }}
+      {{ if eq .Title "Add to cart" }}
+        {{ .Content | safeHTML }}
+      {{ end }}
+    {{ end }}
   </div>
 </div>

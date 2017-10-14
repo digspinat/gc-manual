@@ -4,6 +4,22 @@
     <div class="header">
       <h1>German Car Manual</h1>
     </div>
+    <div class="row">
+      {{ range .Site.Pages }}
+        {{ if (isset .Params "car_id") }}
+          {{ .Render "summary" }}
+        {{ end }}
+      {{ end }}
+    </div>
+    <div class="row text-center">
+      <div class="padding-top">
+        {{ range .Site.Pages }}
+          {{ if eq .Title "Home part 001" }}
+            {{ .Content | safeHTML }}
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
   </div>
 </div>
 {{ partial "footer.html" . }}

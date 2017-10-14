@@ -1,19 +1,17 @@
 <!-- </div>
 </div> -->
 <footer>
-  <div class="my_content">
     <div class="row footer_title" style="background-color:#181c1e;">
-      <div class="col-md-4"></div>
-      <div class="col-md-4">
-        <h6>
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
           {{ range .Site.Pages }}
             {{ if eq .Type "footer" }}
-              {{ .Description }}
+              {{ .Description }} <br>
+              {{ .Content | safeHTML }}
             {{ end }}
           {{ end }}
-        </h6>
       </div>
-      <div class="col-md-4 text-right" style="color:black;">
+      <div class="col-md-2 text-right" style="color:black;">
           <select class="" name="{{ .Permalink }}" id="lang_url">
             <option value="">Select Currency</option>
             {{ if .IsTranslated }}
@@ -26,7 +24,6 @@
       </div>
     </div>
   </div>
-</footer>
 <script src="{{ .Site.BaseURL }}js/ui.js"></script>
 
 {{ partial "google_analytics.html" . }}

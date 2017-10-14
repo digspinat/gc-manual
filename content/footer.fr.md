@@ -1,6 +1,6 @@
 ---
 title: Footer
-description: 2017 manuels de voiture allemands
+description: 2017 German Car Manuals
 id: footer
 weight: 1
 type: footer

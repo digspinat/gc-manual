@@ -12,8 +12,8 @@
       <div class="row">
         <div class="col-md-12">
           <ul class="list-group">
-            <li class="list-group-item"><span class="gcm-header">Currency: </span>{{ .Params.currency }}<span class="gcm-header">&nbsp;&nbsp; &nbsp; Price:</span> {{ .Params.price }} </li>
-            <li class="list-group-item"><a target="_blank" href="{{ .Params.amazon_url }}" class="btn btn-primary">Go To Amazon</a></li>
+            <li class="list-group-item"><span class="gcm-header">Currency: </span>{{ .Params.currency }} {{ .Params.price }} </li>
+            <li class="list-group-item">{{ .Params.sendowl | safeHTML }}</li>
           </ul>
         </div>
       </div>
@@ -37,14 +37,12 @@
       </ul>
     </div>
   </div>
-  {{ partial "advantages.html" . }}
-  {{ partial "disadvantages.html" . }}
-  {{ partial "description.html" . }}
+  {{ partial "propsncons.html" . }}
   {{ partial "manualcover.html" . }}
   {{ partial "tableofcontent.html" . }}
   <div class="row padding-top">
     <div class="col-md-12 text-center">
-        <a target="_blank" href="{{ .Params.amazon_url }}" class="btn btn-primary">Go To Amazon</a>
+        {{ .Params.sendowl | safeHTML }}
     </div>
   </div>
   {{ partial "partial_download.html" . }}

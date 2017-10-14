@@ -1,7 +1,9 @@
 <div class="row padding-top">
   <div class="col-md-12">
-    <ul class="list-group">
-      <li class="list-group-item"><span class="gcm-header">Partial Downloads:</span> <strong>{{ .Params.pg_download_id }}</strong></li>
-    </ul>
+    {{ range .Site.Pages }}
+      {{ if eq .Title "download" }}
+        {{ .Content | safeHTML }}
+      {{ end }}
+    {{ end }}
   </div>
 </div>
