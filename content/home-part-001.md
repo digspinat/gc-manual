@@ -1,7 +1,14 @@
 +++
-date = "2017-10-14T12:55:48+00:00"
 draft = true
 title = "Home part 001"
+[date]
 
 +++
+
+
+After publishing, StackEdit will keep your document linked to that publication which makes it easy for you to update it. Once you have modified your document and you want to update your publication, click on the <i class="icon-upload"></i> button in the navigation bar.
+
+> **Note:** The <i class="icon-upload"></i> button is disabled when your document has not been published yet.
+
+#### <i class="icon-upload"></i> Manage document publication
 
