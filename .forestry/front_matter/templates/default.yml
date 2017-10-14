@@ -1,4 +1,6 @@
 ---
+pages:
+- pro.md
 hide_body: false
 fields:
 - name: date
