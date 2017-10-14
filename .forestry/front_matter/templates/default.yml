@@ -1,5 +1,6 @@
 ---
 pages:
+- con.md
 - pro.md
 hide_body: false
 fields:
