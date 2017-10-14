@@ -1,7 +1,12 @@
 +++
-date = "2017-10-14T12:19:40+00:00"
 draft = true
 title = "download"
+[date]
 
 +++
+
+
+* <span style="font-size: 1rem;">Compatible: All Versions of Windows &amp; Mac</span>
+* Delivery: Instant Download!!
+* Requirements: Adobe PDF Reader & WinZip
 
