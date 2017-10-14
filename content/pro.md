@@ -1,10 +1,8 @@
 +++
-draft = false
 title = "Pro"
+type = "page"
 
 +++
-
-
 - List item
 
 - List item

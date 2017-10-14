@@ -6,8 +6,6 @@ weight: 1
 type: footer
 
 ---
-
-
 Item     | Value
 
 -------- | ---
