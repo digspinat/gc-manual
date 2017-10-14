@@ -30,8 +30,8 @@
             </ul>
         </div>
     </div>
-    <div class="main-menu main-menu1  pure-u-1 pure-u-md-1-3 text-right">
-        <div class="pure-menu pure-menu-horizontal custom-menu-3 custom-can-transform ">
+    <div class="main-menu main-menu1  pure-u-1 pure-u-md-1-3 ">
+        <div class="pure-menu pure-menu-horizontal custom-menu-3 custom-can-transform text-left">
             <ul class="pure-menu-list">
               {{ range .Site.Menus.main }}
               {{ if .HasChildren }}
@@ -45,13 +45,11 @@
                   {{ end }}
                 </ul>
                 {{else}}
-                <!-- <li class="pure-menu-item menu-item-main"><a href="{{ .URL }}" class="pure-menu-link menu-color-white">{{ .Name }}</a></li> -->
+                <li class="pure-menu-item menu-item-main"><a href="{{ .URL }}" class="pure-menu-link menu-color-white">{{ .Name }}</a></li>
                 {{end}}
                 {{end}}
-
-
-                  <!-- <li class="pure-menu-item menu-item-main"><a href="#" class="pure-menu-link menu-color-white">Yahoo</a></li>
-                  <li class="pure-menu-item menu-item-main"><a href="#" class="pure-menu-link menu-color-white">W3C</a></li> -->
+                <!-- <li class="pure-menu-item menu-item-main"><a href="#" class="pure-menu-link menu-color-white">Yahoo</a></li>
+                <li class="pure-menu-item menu-item-main"><a href="#" class="pure-menu-link menu-color-white">W3C</a></li> -->
             </ul>
         </div>
     </div>
@@ -67,7 +65,7 @@
           <div class="pure-u-3-24" style=""></div>
           <div class="pure-u-18-24">
             <ul class="pure-menu-list" id="brand_dis">
-              {{ range .Site.Menus.main }}
+              <!-- {{ range .Site.Menus.main }}
                 {{ if .HasChildren }}
                 <li class="pure-menu-item pure-menu-has-children">
                 <a class="pure-menu-link" href="#">{{ .Pre }}{{ .Name }}</a>
@@ -81,7 +79,10 @@
                 {{else}}
                 <li class="pure-menu-item gcm-brand"><a href="{{ .URL }}" class="pure-menu-link menu-color-white">{{ .Name }}</a></li>
                 {{end}}
-              {{end}}
+              {{end}} -->
+
+              <li class="pure-menu-item gcm-brand"><a href="/make/bmw/" class="pure-menu-link menu-color-white">BMW</a></li>
+              <li class="pure-menu-item gcm-brand"><a href="/make/audi/" class="pure-menu-link menu-color-white">Audi</a></li>
             </ul>
           </div>
           <div class="pure-u-3-24" style=""></div>

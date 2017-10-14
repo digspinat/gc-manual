@@ -12,15 +12,15 @@ title = "Blackburn Theme Demo"
 
 [menu]
   [[menu.main]]
-      name = "BMW"
+      name = "About"
       weight = 1
-      identifier = "bmw"
-      url = "/make/bmw/"
+      identifier = "about"
+      url = "/about/"
   [[menu.main]]
-      name = "Audi"
+      name = "Contact"
       weight = 2
-      identifier = "audi"
-      url = "/make/audi/"
+      identifier = "contact"
+      url = "/contact/"
 
 [languages]
 

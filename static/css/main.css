@@ -1,3 +1,9 @@
+.gcm-header-list{
+  color: black;
+  padding: 4px;
+  font-size: 14px;
+}
+
 .home_page{
   height: 600px;
 }
@@ -6,7 +12,7 @@
   background-color: #7a8690;
 }
 .container{
-  background-color: white;
+  background-color: #f9f9f9;
 }
 .my-submenu{
   padding-right: 0px;
@@ -27,7 +33,7 @@
 .my-active{
   font-size: 20px;
   font-weight: 400px;
-  background-color: #007bff;
+  background-color: #0085DA;
   color: white;
 }
 
@@ -53,7 +59,7 @@
 }
 .gcm-brand a:hover {
   color: white;
-  background-color: #007bff;
+  background-color: #0085DA;
 }
 /*Container CSS*/
 .my_content{
