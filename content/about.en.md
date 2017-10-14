@@ -5,6 +5,6 @@ type: page
 menu:
   main:
     name: About 2
-    weight: 1
+    weight: 3
 
 ---
