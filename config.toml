@@ -8,26 +8,11 @@ title = "Blackburn Theme Demo"
 product = "make"
 tag = "tags"
 topic = "topics"
-[languages.ab]
-languageCode = "ab"
-languageName = "AUD"
-title = "AUD"
-weight = 4
-[languages.cy]
-languageCode = "cy"
-languageName = "CAD"
-title = "CAD"
-weight = 5
 [languages.en]
 languageCode = "en-us"
 languageName = "USD"
 title = "USD"
 weight = 1
-[languages.eu]
-languageCode = "eu"
-languageName = "EUR"
-title = "EUR"
-weight = 7
 [languages.fr]
 languageCode = "fr"
 languageName = "GBP"
@@ -38,11 +23,26 @@ languageCode = "ho"
 languageName = "HKD"
 title = "HKD"
 weight = 3
+[languages.ab]
+languageCode = "ab"
+languageName = "AUD"
+title = "AUD"
+weight = 4
+[languages.cy]
+languageCode = "cy"
+languageName = "CAD"
+title = "CAD"
+weight = 5
 [languages.ia]
 languageCode = "ia"
 languageName = "INR"
 title = "INR"
 weight = 6
+[languages.eu]
+languageCode = "eu"
+languageName = "EUR"
+title = "EUR"
+weight = 7
 [languages.mn]
 languageCode = "mn"
 languageName = "MXN"
@@ -58,31 +58,31 @@ languageCode = "sw"
 languageName = "SGD"
 title = "SGD"
 weight = 10
-[languages.tw]
-languageCode = "tw"
-languageName = "TWD"
-title = "TWD"
-weight = 12
 [languages.za]
 languageCode = "za"
 languageName = "ZAR"
 title = "ZAR"
 weight = 11
+[languages.tw]
+languageCode = "tw"
+languageName = "TWD"
+title = "TWD"
+weight = 12
 [[menu.main]]
-identifier = "contact"
-name = "Contact"
-url = "/contact/"
-weight = 3
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 1
 [[menu.main]]
 identifier = "about"
 name = "About"
 url = "/about/"
 weight = 2
 [[menu.main]]
-identifier = "home"
-name = "Home"
-url = "/"
-weight = 1
+identifier = "contact"
+name = "Contact"
+url = "/contact/"
+weight = 4
 [params]
 brand = "Blackburn"
 dateformat = "2006-01-02T00:00:00+00:00"

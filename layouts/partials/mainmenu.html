@@ -90,8 +90,7 @@
   </div>
 </div>
 <input type="hidden" value='{{ i18n "mylangcode" }}' id="lang_code">
-<!-- <script type="text/javascript">
-  $(document).ready(function(){
+<script type="text/javascript">
     var lang_code = $("#lang_code").val();
     var client = algoliasearch("YZO8M6AZ6J", "847f24047332edf2bb6a0c1f0181b83e");
     var index = client.initIndex('new_gcm_car');
@@ -102,30 +101,17 @@
       }).then(res => {
         // console.log(res);
         var Brand = ""
-        $.each(res.hits, function( i, val ){
-          if(lang_code == "en"){
-            if(val['Make'] == "BMW"){
-              Brand += "<li class='pure-menu-item gcm-header gcm-brand'><a href='/make/bmw/' class='pure-menu-link'>"+val['Make']+"</a></li>";
-            }
-            if(val['Make'] == "volkswagan"){
-              Brand += "<li class='pure-menu-item gcm-header gcm-brand'><a href='/make/volkswagan/' class='pure-menu-link'>"+val['Make']+"</a></li>"
-            }
-            if(val['Make'] == "Audi"){
-              Brand += "<li class='pure-menu-item gcm-header gcm-brand'><a href='/make/audi/' class='pure-menu-link'>"+val['Make']+"</a></li>"
-            }
-          }else{
-            if(val['Make'] == "BMW"){
-              Brand += "<li class='pure-menu-item gcm-header gcm-brand'><a href='/fr/make/bmw/' class='pure-menu-link'>"+val['Make']+"</a></li>";
-            }
-            if(val['Make'] == "volkswagan"){
-              Brand += "<li class='pure-menu-item gcm-header gcm-brand'><a href='/fr/make/volkswagan/' class='pure-menu-link'>"+val['Make']+"</a></li>"
-            }
-            if(val['Make'] == "Audi"){
-              Brand += "<li class='pure-menu-item gcm-header gcm-brand'><a href='/fr/make/audi/' class='pure-menu-link'>"+val['Make']+"</a></li>"
-            }
+        $.each(res.hits, function(i, val){
+          if(val['make'] == "BMW"){
+            Brand += "<li class='pure-menu-item gcm-header gcm-brand'><a href='/make/bmw/' class='pure-menu-link'>"+val['make']+"</a></li>";
+          }
+          if(val['make'] == "Audi"){
+            Brand += "<li class='pure-menu-item gcm-header gcm-brand'><a href='/make/audi/' class='pure-menu-link'>"+val['make']+"</a></li>";
+          }
+          if(val['make'] == "Mercedes"){
+            Brand += "<li class='pure-menu-item gcm-header gcm-brand'><a href='/make/mercedes/' class='pure-menu-link'>"+val['make']+"</a></li>";
           }
         });
         $("#brand_dis").html(Brand);
       });
-  });
-</script> -->
+</script>

@@ -4,12 +4,16 @@
     <div class="header">
       <h1>German Car Manual</h1>
     </div>
-    <div class="row">
-      {{ range .Site.Pages }}
-        {{ if (isset .Params "car_id") }}
-          {{ .Render "summary" }}
-        {{ end }}
-      {{ end }}
+    <div class="row" id="product_data">
+
+    </div>
+    <div>
+      <nav aria-label="Page navigation example">
+        <input type="hidden" id="current_page">
+        <ul class="pagination justify-content-center" id="My_Page">
+
+        </ul>
+      </nav>
     </div>
     <div class="row text-center">
       <div class="padding-top">
@@ -21,5 +25,130 @@
       </div>
     </div>
   </div>
+  <script type="text/javascript">
+      var pageIndex = 0;
+      var lang_code = $("#lang_code").val();
+      var client = algoliasearch("YZO8M6AZ6J", "847f24047332edf2bb6a0c1f0181b83e");
+      var index = client.initIndex('new_gcm_car');
+        index.search({
+          query: '*'
+        }).then(res => {
+          var product = "";
+          $.each(res.hits, function( i, val ){
+            product += "<div class='col-md-4'>"+
+              "<div class='ibox'>"+
+                "<div class='ibox-content product-box'>"+
+                  "<div class='product-imitation'>"+
+                    "<a href='#'><img style='width:200px;height:260px;' src='"+val['image_prod_page']+"' alt='' ></a>"+
+                  "</div>"+
+                  "<div class='product-desc'>"+
+                    "<small class='text-muted'></small>"+
+                    "<a href='url' class='product-name'>"+val['title']+"</a>"+
+                    "<ul class='gcm-header-list'>"+
+                      "<li>Make: "+val['make']+"</li>"+
+                      "<li>Series: "+val['serie']+"</li>"+
+                      "<li>Subsiries: "+val['sub_serie']+"</li>"+
+                      "<li>Engine: "+val['engine']+"</li>"+
+                      "<li>Platform: "+val['platform']+", Year: "+val['year']+"</li>"+
+                    "</ul>"+
+                    "<div class='row'>"+
+                        "<a href='#url' class='btn btn-primary btn-outline'>More Info</a>&nbsp;&nbsp;&nbsp;"+
+                        '<div class="owl-image" style="width:10px;height:5px;">'+val['sendowl']+'</div>'+
+                    "</div>"+
+                  "</div>"+
+                "</div>"+
+              "</div>"+
+            "</div>";
+          });
+          $("#product_data").html(product);
+
+          $("#current_page").val(0);
+          var pageText = "<li class='page-item disabled'><a class='page-link' href='#' tabindex='-1'>Total Pages: ("+res.nbPages+")</a></li>"+
+          "<li class='page-item'><a class='page-link' href='#'>Current: 1</a></li>"+
+          "<li class='page-item'><a class='page-link my-next' href='#'>Next</a></li>";
+          $("#My_Page").html(pageText);
+        });
+
+        $(document).on('click','.my-next',function(){
+          var searchPage = pageIndex + 1;
+          // alert(searchPage);
+          index.search({
+            query: '*',
+            page: searchPage
+          }).then(res => {
+            console.log(res);
+            if(res.hits.length == 0){
+              alert("Page Number out of Reach");
+              return false
+            }else{
+              if(lang_code == "en"){
+                var product = "";
+                $.each(res.hits, function( i, val ){
+                  product += "<div class='col-md-4'>"+
+                    "<div class='ibox'>"+
+                      "<div class='ibox-content product-box'>"+
+                        "<div class='product-imitation'>"+
+                          "<a href='#'><img style='width:200px;height:260px;' src='"+val['image_prod_page']+"' alt='' ></a>"+
+                        "</div>"+
+                        "<div class='product-desc'>"+
+                          "<small class='text-muted'></small>"+
+                          "<a href='url' class='product-name'>"+val['title']+"</a>"+
+                          "<ul class='gcm-header-list'>"+
+                            "<li>Make: "+val['make']+"</li>"+
+                            "<li>Series: "+val['serie']+"</li>"+
+                            "<li>Subsiries: "+val['sub_serie']+"</li>"+
+                            "<li>Engine: "+val['engine']+"</li>"+
+                            "<li>Platform: "+val['platform']+", Year: "+val['year']+"</li>"+
+                          "</ul>"+
+                          "<div class='row'>"+
+                              "<a href='#url' class='btn btn-primary btn-outline'>More Info</a>&nbsp;&nbsp;&nbsp;"+
+                              "<div class='owl-image' style='width:10px;height:5px;'>"+val['sendowl']+"</div>"+
+                          "</div>"+
+                        "</div>"+
+                      "</div>"+
+                    "</div>"+
+                  "</div>";
+                });
+                $("#product_data").html(product);
+              }else{
+                var product = "";
+                $.each(res.hits, function( i, val ){
+                  product += "<div class='col-md-4'>"+
+                    "<div class='ibox'>"+
+                      "<div class='ibox-content product-box'>"+
+                        "<div class='product-imitation'>"+
+                          "<a href='#'><img style='width:200px;height:260px;' src='"+val['image_prod_page']+"' alt='' ></a>"+
+                        "</div>"+
+                        "<div class='product-desc'>"+
+                          "<small class='text-muted'></small>"+
+                          "<a href='url' class='product-name'>"+val['title']+"</a>"+
+                          "<ul class='gcm-header-list'>"+
+                            "<li>Make: "+val['make']+"</li>"+
+                            "<li>Series: "+val['serie']+"</li>"+
+                            "<li>Subsiries: "+val['sub_serie']+"</li>"+
+                            "<li>Engine: "+val['engine']+"</li>"+
+                            "<li>Platform: "+val['platform']+", Year: "+val['year']+"</li>"+
+                          "</ul>"+
+                          "<div class='row'>"+
+                              "<a href='#url' class='btn btn-primary btn-outline'>More Info</a>&nbsp;&nbsp;&nbsp;"+
+                              '<div class="owl-image" style="width:10px;height:5px;">'+val['sendowl']+'</div>'+
+                          "</div>"+
+                        "</div>"+
+                      "</div>"+
+                    "</div>"+
+                  "</div>";
+                });
+                $("#product_data").html(product);
+              }
+              $("#current_page").val(0);
+              var pageText = "<li class='page-item disabled'><a class='page-link' href='#' tabindex='-1'>Total Pages: ("+res.nbPages+")</a></li>"+
+              "<li class='page-item'><a class='page-link' href='#'>Current: "+(searchPage+1)+"</a></li>"+
+              "<li class='page-item'><a class='page-link my-next' href='#'>Next</a></li>";
+              $("#My_Page").html(pageText);
+            }
+          });
+          pageIndex++;
+        });
+  </script>
 </div>
 {{ partial "footer.html" . }}
