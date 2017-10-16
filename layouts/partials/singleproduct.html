@@ -5,16 +5,16 @@
     </div>
   </div>
   <div class="row padding-top image-box-product">
-    <div class="col-md-5">
-      <img src="{{ .Params.image_prod_page }}" class="img-thumbnail" alt="Cinque Terre">
+    <div class="col-md-6">
+      <img src="{{ .Params.image_prod_page }}" class="img-fluid" alt="Cinque Terre">
     </div>
-    <div class="col-md-7 padding-top-change">
+    <div class="col-md-6 padding-top-change">
       <div class="row">
         <div class="col-md-12">
-          <ul class="list-group">
-            <li class="list-group-item"><span class="gcm-header">Currency: </span>{{ .Params.currency }} {{ .Params.price }} </li>
-            <li class="list-group-item">{{ .Params.sendowl | safeHTML }}</li>
-          </ul>
+          <div class="">
+            <span class="gcm-header">Price: </span>{{ .Params.price }}
+          </div>
+          <div class="padding-top">{{ .Params.sendowl | safeHTML }}</div>
         </div>
       </div>
       {{ partial "partial_cart.html" . }}
@@ -38,7 +38,7 @@
     </div>
   </div>
   {{ partial "propsncons.html" . }}
-  {{ partial "manualcover.html" . }}
+  {{ partial "gtm_code.html" . }}
   {{ partial "tableofcontent.html" . }}
   <div class="row padding-top">
     <div class="col-md-12 text-center">

@@ -2,7 +2,6 @@
 draft = true
 title = "Add to cart"
 type = "page"
-[date]
 
 +++
 
@@ -20,4 +19,3 @@ type = "page"
 Add to cart list item 5
 
 Add to cart list item 5
-

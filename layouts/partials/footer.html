@@ -79,5 +79,10 @@
       window.addEventListener(WINDOW_CHANGE_EVENT, closemenu);
       })(this, this.document);
 </script>
+{{ range .Site.Pages }}
+  {{ if eq .Title "GA" }}
+    {{ .Content | safeHTML }}
+  {{ end }}
+{{ end }}
 </body>
 </html>
