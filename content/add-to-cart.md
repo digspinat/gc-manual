@@ -2,20 +2,16 @@
 draft = true
 title = "Add to cart"
 type = "page"
+[date]
 
 +++
 
 
-* <span style="font-size: 1rem;"><i class="fa fa-plus" aria-hidden="true"></i></span>Add to cart list item 1
+* <span style="font-size: 1rem;"><i class="fa fa-plus" aria-hidden="true"></i></span><i class="fa fa-check" aria-hidden="true"></i> Instant access to your download
 
-* <span style="font-size: 1rem;"><i class="fa fa-upload" aria-hidden="true"></i>Manage document publication</span>
+* <i class="fa fa-check" aria-hidden="true"></i> No hidden fees
 
-* Add to cart list item 2
+* <i class="fa fa-check" aria-hidden="true"></i> Manual can be used for life
 
-* Add to cart list item 3
+* <i class="fa fa-check" aria-hidden="true"></i> No need to renew or pay any extra.
 
-* Add to cart list item 4
-
-Add to cart list item 5
-
-Add to cart list item 5

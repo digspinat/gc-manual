@@ -1,10 +1,10 @@
 ---
 pages:
-- pro.md
-- con.md
-- add-to-cart.md
-- download.md
 - home-part-001.md
+- download.md
+- add-to-cart.md
+- con.md
+- pro.md
 hide_body: false
 fields:
 - name: date
