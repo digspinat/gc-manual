@@ -1,7 +1,23 @@
 +++
-date = "2017-10-16T11:25:03+00:00"
 draft = true
 title = "GA"
+[date]
 
 +++
 
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108139552-1"></script>
+
+<script>
+
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){dataLayer.push(arguments);}
+
+gtag('js', new Date());
+
+gtag('config', 'UA-108139552-1');
+
+</script>
