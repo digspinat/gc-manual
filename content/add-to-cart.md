@@ -1,5 +1,4 @@
 +++
-draft = true
 title = "Add to cart"
 type = "page"
 [date]
