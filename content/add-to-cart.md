@@ -5,9 +5,7 @@ type = "page"
 [date]
 
 +++
-
-
-* <span style="font-size: 1rem;"><i class="fa fa-plus" aria-hidden="true"></i></span> <i class="fa fa-check-circle" aria-hidden="true"></i>Instant access to your download
+* <i class="fa fa-check-circle" aria-hidden="true"></i>Instant access to your download
 
 * <i class="fa fa-check-circle" aria-hidden="true"></i>No hidden fees
 
