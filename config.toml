@@ -15,7 +15,7 @@ title = "USD"
 weight = 1
 [languages.fr]
 languageCode = "fr"
-languageName = "GBP"
+languageName = "GL"
 title = "GBP"
 weight = 2
 [languages.ho]
