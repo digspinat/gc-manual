@@ -1,7 +1,6 @@
 +++
 title = "download"
 type = "page"
-[date]
 
 +++
 
@@ -11,4 +10,3 @@ type = "page"
 * Delivery: Instant Download
 
 * Requirements: Adobe PDF Reader & WinZip (for ORA files virtualbox)
-

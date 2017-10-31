@@ -2,7 +2,6 @@
 draft = true
 title = "Add to cart"
 type = "page"
-[date]
 
 +++
 * <i class="fa fa-check-circle" aria-hidden="true"></i>Instant access to your download

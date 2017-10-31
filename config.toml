@@ -1,5 +1,5 @@
 author = "Yoshiharu Yamashita"
-baseurl = "https://gc-manual.netlify.com/"
+baseurl = "http://www.germancarmanuals.com"
 canonifyurls = false
 copyright = "&copy; 2016. All rights reserved."
 paginate = 10

@@ -1,7 +1,6 @@
 +++
 title = "Pro"
 type = "page"
-[date]
 
 +++
 * <i class="fa fa-plus-circle" aria-hidden="true"></i>All pages are printable, so print off what you need and take it with you into the garage or workshop
